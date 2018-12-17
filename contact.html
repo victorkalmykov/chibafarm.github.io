@@ -8,12 +8,10 @@
 		<meta name="keywords" content="Chiba University,Faculty of Engineering,Faculty of Horticulture,Campus Asia">
 		<meta name="description" content="Campus Asia：The Plant Environment Designing Program is a part of the Japanese, Chiba University. Official Site.">
 		<link rel="stylesheet" type="text/css" href="common/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="common/css/common.css">
-		<link rel="stylesheet" type="text/css" href="common/css/contents.css">
-		<link rel="stylesheet" type="text/css" href="common/css/font-awesome-4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="common/css/en.css">
+		<link rel="stylesheet" type="text/css" href="common/css/css.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--[if lt IE 9]>
-			<script src="../common/js/IE9.js"></script>
+		<script src="../common/js/IE9.js"></script>
 		<![endif]-->
 		<!--<script>(function(){document.documentElement.className='js'})();</script>
 		<script type='text/javascript' src="../common/js/jquery_index.js"></script>
@@ -25,39 +23,51 @@
 <body>
 	<header>
 		<div id="header">
-			<h1 id="logo">FARM<br></h1><h1 id="logo2"> Future Agriculture with Far East Russia Pre-master to PhD Program</h1>
+			<h1 id="logo">F A R M<br></h1><h1 id="logo2"> Future Agriculture with Far East Russia Pre-master to PhD Program</h1>
 			<div class="en">
-				<img src="common/img/flag/UK1.png">
-				<a  href="index.html">English</a>
-				<img src="common/img/flag/RU1.png">
-				<a href="ru/index.html">Русский</a>
-				<img src="common/img/flag/JP1.png">
-				<a href="jp/index.html">日本語</a>
+					<a href="index.html"><img class="flag" src="common/img/flag/UK1.png"> </a>
+					<a href="ru/index.html"><img class="flag" src="common/img/flag/RU1.png"></a>
+					<a href="jp/index.html"><img class="flag" src="common/img/flag/JP1.png"></a>
 			</div>
 		</div>
 	</header>
+	<!-- Menu start -->	
 	<nav>
 		<div id="gNavi">
 			<ul>
-				<li><a href="index.html"><span class="roll" data-hover="HOME">HOME</span></a></li>
-				<li><a href="introduction.html"><span class="roll" data-hover="INTRODUCTION">INTRODUCTION</span></a></li>
-				<!--
-				<li><a href="project.html"><span class="roll" data-hover="PROJECT">PROJECT</span></a></li>
-				<li><a href="workshop.html"><span class="roll" data-hover="WORKSHOP">WORKSHOP</span></a></li>
-				-->
-				<li><a href="contact.html"><span class="roll" data-hover="CONTACT">CONTACT</span></a></li>
+				<li><a class="zoom" href="index.html">HOME</a></li>
+				<li><a class="zoom" href="introduction.html">INTRODUCTION</a></li>
+				<li><a class="zoom" href="project.html">PROJECT</a></li>
+				<li><a class="zoom" href="workshop.html">WORKSHOP</a></li>
+				<li><a class="zoom" href="contact.html">CONTACT</a></li>
 			</ul>
-		</div>
 	</nav>
-	<div id="contents">
-		<h1 class="conTitle">CONTACT<span>CONTACT</span></h1>
-		<div id="contact_main">
-			<img src="common/img/photo/chibadai_main2.jpg"> 
+<!-- Mini menu -->	
+		</div>
+		<div id="minimenu">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="#"><i class="material-icons">menu</i></a>
+				<ul class="submenu">
+					<li class="submenu-item"><a href="index.html">HOME</a></li>
+					<li class="submenu-item"><a href="introduction.html">INTRODUCTION</a></li>
+					<li class="submenu-item"><a href="project.html">PROJECT</a></li>
+					<li class="submenu-item"><a href="workshop.html">WORKSHOP</a></li>
+					<li class="submenu-item"><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</div>	
+<!-- Menu end -->
+	<div class="conteiner">
+		<div class="conteiner2" id="topCont">
+			<h1 class="conTitle">CONTACT</h1>
+			<img class="pic" src="common/img/photo/chibadai_main2.jpg"> 
 			<p>Kashiwano-ha Campus 6-2-1, Kashiwano-ha, Kashiwashi, Chiba, 277-0882 Japan </p>
 		</div>
-			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.7493654136663!2d139.9486632693087!3d35.893526076611295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189c11ba4650f7%3A0xe5a5c396e85778e0!2sChiba+University+Kashiwanoha+Campus!5e0!3m2!1sru!2sjp!4v1541387603063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<a id="pageTop" href="#header">▲ PAGE TOP</a>
+		<div class="conteiner2" id="topCont">
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.7493654136663!2d139.9486632693087!3d35.893526076611295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189c11ba4650f7%3A0xe5a5c396e85778e0!2sChiba+University+Kashiwanoha+Campus!5e0!3m2!1sru!2sjp!4v1541387603063" width="100%" height="100%" frameborder="1" style="border-radius: 5px; box-sizing: border-box;box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);" allowfullscreen></iframe>
+		</div>	
 	</div>
+			<a id="pageTop" href="#header"><i class="material-icons">arrow_upward</i></a>
 	<footer>
 		<div id="footer">
 			<div class="fLogo"><img src="common/img/footerLogo.png" alt=""></div>

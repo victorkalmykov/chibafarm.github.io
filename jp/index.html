@@ -8,10 +8,8 @@
 		<meta name="keywords" content="Chiba University,Faculty of Engineering,Faculty of Horticulture,Campus Asia">
 		<meta name="description" content="Campus Asia：The Plant Environment Designing Program is a part of the Japanese, Chiba University. Official Site.">
 		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="../common/css/common.css">
-		<link rel="stylesheet" type="text/css" href="../common/css/contents.css">
-		<link rel="stylesheet" type="text/css" href="../common/css/font-awesome-4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../common/css/en.css">
+		<link rel="stylesheet" type="text/css" href="../common/css/css.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="../common/js/IE9.js"></script>
 		<![endif]-->
@@ -25,47 +23,60 @@
 <body>
 	<header>
 		<div id="header">
-			<h1 id="logo">FARM<br></h1><h1 id="logo2"> Future Agriculture with Far East Russia Pre-master to PhD Program</h1>
+			<h1 id="logo">F A R M<br></h1><h1 id="logo2"> Future Agriculture with Far East Russia Pre-master to PhD Program</h1>
 			<div class="en">
-				<img src="../common/img/flag/UK1.png">
-				<a  href="../index.html">English</a>
-				<img src="../common/img/flag/RU1.png">
-				<a href="../ru/index.html">Русский</a>
-				<img src="../common/img/flag/JP1.png">
-				<a href="index.html">日本語</a>
-			</div>
+					<a href="../index.html"><img class="flag" src="../common/img/flag/UK1.png"> </a>
+					<a href="../ru/index.html"><img class="flag" src="../common/img/flag/RU1.png"></a>
+					<a href="index.html"><img class="flag" src="../common/img/flag/JP1.png"></a>
+				</div>
 		</div>
 	</header>
+<!-- Menu start -->	
 	<nav>
 		<div id="gNavi">
 			<ul>
-				<li><a href="index.html"><span class="roll" data-hover="HOME">HOME</span></a></li>
-				<li><a href="introduction.html"><span class="roll" data-hover="IFARMとは">FARMとは</span></a></li>
-				<!--
-				<li><a href="project.html"><span class="roll" data-hover="プロジェクト">プロジェクト</span></a></li>
-				<li><a href="workshop.html"><span class="roll" data-hover="ワークショップ">ワークショップ</span></a></li>
-				-->
-				<li><a href="contact.html"><span class="roll" data-hover="お問い合わせ">お問い合わせ</span></a></li>
+				<li><a class="zoom" href="index.html">HOME</a></li>
+				<li><a class="zoom" href="introduction.html">FARMとは</a></li>
+				<li><a class="zoom" href="project.html">プロジェクト</a></li>
+				<li><a class="zoom" href="workshop.html">ワークショップ</a></li>
+				<li><a class="zoom" href="contact.html">お問い合わせ</a></li>
 			</ul>
-		</div>
 	</nav>
-	<div id="contents">
-		<h1 class="conTitle">INTRODUCTION<span>INFORMATION</span></h1>
-			<div><img src="../common/img/photo/chibadai_main.jpg"></div>
+<!-- Mini menu -->	
+		</div>
+		<div id="minimenu">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="#"><i class="material-icons">menu</i></a>
+				<ul class="submenu">
+					<li class="submenu-item"><a href="index.html">HOME</a></li>
+					<li class="submenu-item"><a href="introduction.html">FARMとは</a></li>
+					<li class="submenu-item"><a href="project.html">プロジェクト</a></li>
+					<li class="submenu-item"><a href="workshop.html">ワークショップ</a></li>
+					<li class="submenu-item"><a href="contact.html">お問い合わせ</a></li>
+				</ul>
+		</div>	
+<!-- Menu end -->
+	</nav>
+	<div class="contents">
+		<h1 class="conTitle">INTRODUCTION<h1>
+			<div><img class="pic" src="../common/img/photo/chibadai_main.jpg"></div>
 		<h1 class="conTitle">FARM （Future Agriculture with Far east Russia Pre-Master to PhD Program）</h1>
 			<p>本事業は、極東ロシアにおいて食料生産から流通・販売ビジネスまで含めた未来農業（高度施設園芸、植物工場）を理解でき、日露の共同事業に貢献できる人材育成を目的とし、大きく２つの領域でプログラムを実行する。第一は、未来農業の中心である「太陽光利用型植物工場」と「人工光型植物工場」における環境制御、栽培技術・管理、デバイス開発に関するプログラムであり、第二は「太陽光利用型植物工場」と「人工光型植物工場」の生産物管理、マーケティング、ライフサイクルアセスメント等に関するプログラムである。栽培や環境に関わる領域だけではなく、工学やマーケティングに関するプログラムを学び、極東地域における日露共同事業の柱の一つとされている、温室ビジネスで活躍できる人材を育成する。</p>  
 		<div id="topMain">
 			<h2 class="topHeader"><span>FARM</span></h2>
-			<img src="../common/img/Untitled1JP.png" alt="">
+			<img class="pic" src="../common/img/Untitled1JP.png" alt="">
 		</div>
 		<div>
-			<h2 class="topHeader"><span>Partner Universities</span></h2>
-			<img id="logo_uni" src="../common/img/logo_uni.png" alt="">
-		</div>
+				<h2 class="topHeader"><span>Partner Universities</span></h2>
+				<a href="http://www.primacad.ru/index.php?option=com_content&view=featured&Itemid=101"><img class="pic" id="logo_uni" src="../common/img/logo_uni_Prim.png" alt=""></a>
+				<a href="http://sakhgu.ru/"><img class="pic" id="logo_uni" src="../common/img/logo_uni_Sah.png" alt=""></a>
+			</div>
 	</div>
 	<footer>
+		<a id="pageTop" href="#header"><i class="material-icons">arrow_upward</i></a>
 		<div id="footer">
-			<div class="fLogo"><img src="common/img/footerLogo.png" alt=""></div>
+			<div class="fLogo"><img src="../common/img/footerLogo.png" alt=""></div>
 			<div class="add">
 				<div class="addLeft">
 					Nishi-Chiba Campus (Administration Bureau)<br>
