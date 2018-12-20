@@ -2,61 +2,61 @@
 <html>
 <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="icon" type="image/png" sizes="16x16" href="common/img/favicon.png">
 		<title>FARM project. Chiba University. Center for Environment, Health and Field Sciences </title>
 		<meta name="keywords" content="Chiba University,Faculty of Engineering,Faculty of Horticulture,Campus Asia">
 		<meta name="description" content="Campus Asia：The Plant Environment Designing Program is a part of the Japanese, Chiba University. Official Site.">
 		<link rel="stylesheet" type="text/css" href="common/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="common/css/css.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--[if lt IE 9]>
-		<script src="../common/js/IE9.js"></script>
-		<![endif]-->
-		<!--<script>(function(){document.documentElement.className='js'})();</script>
-		<script type='text/javascript' src="../common/js/jquery_index.js"></script>
-		<script type='text/javascript' src="../common/js/jquery.heightLine.js"></script>
-		<script type='text/javascript' src="../common/js/heightline.js"></script>
-		<script type='text/javascript' src="../common/js/functions_index.js"></script>
-		-->
-</head>
+		</head>
 <body>
 	<header>
-		<div id="header">
+		<div id="toppage"></div>
+		<div id="minilogo"><h1 id="logo3">F A R M</h1></div>
+		<div class="header">
 			<h1 id="logo">F A R M<br></h1><h1 id="logo2"> Future Agriculture with Far East Russia Pre-master to PhD Program</h1>
+		<!-- Menu start -->	
+		<div class="topbar">
+			<nav>
+				<div class="navi">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="introduction.html">INTRODUCTION</a></li>
+					<li><a href="project.html">PROJECT</a></li>
+					<li><a href="workshop.html">WORKSHOP</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				</div>
+			</nav>
+		</div>
+		</div>	
+		<!-- Mini menu -->
+		<div id="minimenu">			
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+			<label class="btn-menu" for="hmt">
+			  <span class="first"></span>
+			  <span class="second"></span>
+			  <span class="third"></span>
+			</label>
+			<ul class="hidden-menu">
+				<li class="submenu-item"><a href="index.html">HOME</a></li>
+				<li class="submenu-item"><a href="introduction.html">INTRODUCTION</a></li>
+				<li class="submenu-item"><a href="project.html">PROJECT</a></li>
+				<li class="submenu-item"><a href="workshop.html">WORKSHOP</a></li>
+				<li class="submenu-item"><a href="contact.html">CONTACT</a></li> 
+			</ul>
+		</div>			
+		<!-- End Mini menu -->
+	<!-- Menu end -->
+	</header>
+	<!-- Content -->
+	<div class="contents">
 				<div class="en">
 					<a href="index.html"><img class="flag" src="common/img/flag/UK1.png"> </a>
 					<a href="ru/index.html"><img class="flag" src="common/img/flag/RU1.png"></a>
 					<a href="jp/index.html"><img class="flag" src="common/img/flag/JP1.png"></a>
 				</div>
-		</div>
-	</header>
-<!-- Menu start -->	
-	<nav>
-		<div id="gNavi">
-			<ul>
-				<li><a class="zoom" href="index.html">HOME</a></li>
-				<li><a class="zoom" href="introduction.html">INTRODUCTION</a></li>
-				<li><a class="zoom" href="project.html">PROJECT</a></li>
-				<li><a class="zoom" href="workshop.html">WORKSHOP</a></li>
-				<li><a class="zoom" href="contact.html">CONTACT</a></li>
-			</ul>
-	</nav>
-<!-- Mini menu -->	
-		</div>
-		<div id="minimenu">
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="#"><i class="material-icons">menu</i></a>
-				<ul class="submenu">
-					<li class="submenu-item"><a href="index.html">HOME</a></li>
-					<li class="submenu-item"><a href="introduction.html">INTRODUCTION</a></li>
-					<li class="submenu-item"><a href="project.html">PROJECT</a></li>
-					<li class="submenu-item"><a href="workshop.html">WORKSHOP</a></li>
-					<li class="submenu-item"><a href="contact.html">CONTACT</a></li>
-				</ul>
-		</div>	
-<!-- Menu end -->
-	<div class="contents">
 		<h1 class="conTitle">CHIBA UNIVERSITY</h1>
 		<div><img class="pic" src="common/img/photo/chibadai_main.jpg"></div>
 		<h1 class="conTitle">FARM （Future Agriculture with Far east Russia Pre-Master to PhD Program）</h1>
@@ -72,9 +72,9 @@
 			</div>	
 	</div>	
 	<footer>
-			<a id="pageTop" href="#header"><i class="material-icons">arrow_upward</i></a>
+			<a id="pageTop" href="#toppage"><i class="material-icons">arrow_upward</i></a>
 		<div id="footer">
-			<div class="fLogo"><img src="common/img/footerLogo.png" alt=""></div>
+			<div class="fLogo"><img id="footerLogo" src="common/img/footerLogo.png" alt=""></div>
 			<div class="add">
 				<div class="addLeft">
 					Nishi-Chiba Campus (Administration Bureau)<br>
