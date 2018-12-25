@@ -87,6 +87,11 @@ a#mail, #tel {
 	color: #DCEDC8;
 	font-size:25px;
 }
+#logo3 {
+	font-family:'Abril Fatface', cursive;'Russo One', sans-serif;
+	color: #DCEDC8;
+	font-size:25px;
+}
 #minilogo	{
 	display: none;
 	font-family:'Abril Fatface', cursive;'Russo One', sans-serif;
@@ -162,11 +167,14 @@ nav {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
-.hidden-menu a {
+.hidden-menu li {
 	color: #fff;
-	padding: 5px;
+	padding: 10px 0 10px 5px;
 }
-
+.hidden-menu li a {
+	color: #fff;
+	font-size: 18px;
+}
 
 .hidden-menu-ticker {
   display: none;
@@ -275,17 +283,6 @@ nav {
 /* Header end */
 
 /* CONTENT */
-.contents {
-	width: 900px;
-	max-width: calc(100% - 16px);
-	margin: -70px auto 0 auto;
-	background-color: #fff;
-	padding: 10px;
-	text-align: center;
-	box-sizing: border-box;
-	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-	position: relative;
-}
 			/* Флаги для смены языка */
 			.contents .en {
 				position: absolute;
@@ -342,7 +339,20 @@ nav {
 			}
 			
 			/* Конец флаги для смены языка */
-				
+			
+/* Контент и его содержимое */			
+.contents {
+	width: 900px;
+	max-width: calc(100% - 16px);
+	margin: -70px auto 0 auto;
+	background-color: #fff;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	position: relative;
+}
+	
 .contents img {
 	max-width: 100%;
 	height: auto;
@@ -350,14 +360,20 @@ nav {
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
 
-}
 .contents p {
 	margin-bottom:20px;
+	text-align: left;
 	display: inherit;
+	color: #757575;
+}
+
+.contents li {
+	margin-left: 10px;
 	text-align: left;
 	color: #757575;
 }
-				
+
+
 
 @media screen and (max-width: 990px) {
 .contents img {
@@ -366,13 +382,6 @@ nav {
 	box-sizing: border-box;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
-}
-
-.contents p {
-	margin-bottom:20px;
-	display: inherit;
-	text-align: left;
-	color: #757575;
 }
 
 	/* Заголовок страницы контента */
@@ -394,7 +403,7 @@ nav {
 	width: 100%;
 	float: left;
 	clear: both;
-	margin: 0 0 20px 0;
+	margin: 5px 0 20px 0;
 	background: url(../img/line.png) left center repeat-x;
 	font-family: 'Ubuntu','Roboto','Noto Sans Japanese', serif;
 	color: #61AC2A;
@@ -419,7 +428,7 @@ nav {
 	
 }	
 
-		.conteiner p{
+	.conteiner p	{
 		text-align: left;
 	}
 
@@ -435,11 +444,12 @@ nav {
 	min-height:335px;
 	padding: 10px;
 	margin-top: 5px;
+	text-align: left;
 	border-radius: 5px;
 	box-sizing: border-box;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
- /* Id для верних контейнеров с содержимым */
+ /* Id для верних контейнеров с содержимым и расположением друг рядом с другом */
 	#topCont {
 		flex: 1 1 150px;
 	}
@@ -448,6 +458,83 @@ nav {
 .fill_empty {
 	min-height: 60vh;
 }
+
+/* Класс activity */
+.activity	{
+	width: 90%;
+	color: #757575;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: start;
+	padding: 10px;
+	margin: 7px auto 5px auto;
+	border: 1px solid rgba(0,0,0,.14);
+	transition: all 0.3s ease;
+}
+
+.activity:hover	{
+	border: 1px solid rgba(0,0,0,.14);
+	box-sizing: border-box;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	transform: scale(1.07);
+}
+
+	.activity_date	{
+		flex: 0 1 120px;
+		border-right: 1px solid rgba(0,0,0,.14);
+		vertical-align: center;
+	}
+
+	.activity_name	{
+		flex: 1 1;
+		text-align: left;
+		padding: 0 5px 0 5px; 
+	}
+
+	.backtoactivity {
+		width: 100%;
+		text-align: right;
+		color: #757575;
+		margin-bottom:10px;
+	}
+		.backtoactivity a {
+			padding: 10px;
+			color: #757575;
+			border: 1px solid rgba(0,0,0,.14);
+			border-radius: 5px;
+	}
+		.backtoactivity a:hover {
+			padding: 10px;
+			color: #757575;
+			box-sizing: border-box;
+			box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+			border-radius: 5px;
+		}
+		
+	.activity_content {
+		
+	}
+	
+@media (max-width: 767px) {
+	.activity {
+		flex-direction: column;
+		}
+	.activity_date {
+		max-height: 25px;
+		border-right: none;
+		border-bottom: 1px solid rgba(0,0,0,.14);
+		order: 2;
+		}
+	.activity_name {
+		padding: 5px;
+		order: 4;
+		}
+}
+
+	
+	
+
+/* Конец Класс activity */
 
 /*Изображения*/
 
@@ -463,6 +550,10 @@ img.pic {
 	border-radius: 5px;
 	box-sizing: border-box;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+#logo_uni	{
+	max-width: 400px;
 }
 
 #MainBild	{
@@ -608,7 +699,7 @@ footer{
 }
 
 #footer {
-	width: 880px;
+	max-width: 880px;
 	margin: 20px auto 0 auto;
 	font-size: 85.7%;
 	padding: 10px 30px 20px 30px;
@@ -617,9 +708,8 @@ footer{
 
 @media screen and (max-width: 767px) {
 #footer{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	max-width: 880px;
+	margin: 20px 2px 0 2px;
 }
 }
 
