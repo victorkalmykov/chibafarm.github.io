@@ -1,0 +1,60 @@
+/*  Футтер */
+footer{
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-top: 10px;
+	background: #fff;
+	color: #757575;
+}
+
+#footerLogo { 
+	width: 70px;
+	height: 70px;
+}
+
+#footer {
+	max-width: 880px;
+	margin: 20px auto 0 auto;
+	font-size: 85.7%;
+	padding: 10px 30px 20px 30px;
+	border-top: 1px solid rgba(0,0,0,.14)
+}
+
+@media screen and (max-width: 767px) {
+#footer{
+	max-width: 880px;
+	margin: 20px 2px 0 2px;
+}
+}
+
+.fLogo {
+	width: 100px;
+	float: left;
+	/*clear: both;*/
+	margin: 0 0 10px 0;
+}
+
+.add {
+	width: 100%;
+	float: left;
+	clear: both;
+	padding: 0 0 20px 0;
+}
+
+	.addLeft {
+		width: 30%;
+		float: left;
+	}
+
+	.add a {
+		color: #757575;
+		text-decoration: underline;
+	}	
+@media screen and (max-width: 767px) {
+		.addLeft:nth-child(2n) {
+			margin-left: 20px;
+		}
+}
+
+/* Конец Footer */

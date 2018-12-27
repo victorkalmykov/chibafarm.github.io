@@ -1,0 +1,45 @@
+/*Изображения*/
+
+a img {
+	border:none;
+	vertical-align: middle;
+}
+
+.galery	{
+	max-width: 950px;
+	margin: 10px auto 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: space-around;
+}
+
+.galaryelement	{
+	flex: 0 1 300px;
+}
+
+.galaryelement img	{
+	max-width: 100%;
+	min-width: 300px;
+	height: auto;
+}
+
+/*class для картинок с закруглением*/
+img.pic {
+	max-width: 100%;
+	margin: 5px 0 5px 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+#logo_uni	{
+	max-width: 400px;
+}
+
+#MainBild	{
+	max-width: 400px;
+}
+
+/* Конец изображения*/
