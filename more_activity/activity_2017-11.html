@@ -9,6 +9,7 @@
 		<meta name="description" content="Campus Asia：The Plant Environment Designing Program is a part of the Japanese, Chiba University. Official Site.">
 		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../common/css/cssconnect.css">
+		<link rel="stylesheet" href="material-photo-gallery.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -49,7 +50,7 @@
 				<li class="submenu-item"><a href="../contact.html">ACCESS</a></li>
 				<li class="submenu-item" id="menufooter">
 					<img id="footerLogo" src="common/img/footerLogo.png" alt=""><br><a href="http://www.chiba-u.ac.jp" target="_blank">www.chiba-u.ac.jp</a><br>Copyright (C) 2017 Chiba University. All Rights Reserved.
-				</li>				
+				</li>
 			</ul>
 		</div>			
 		<!-- End Mini menu -->
@@ -62,22 +63,22 @@
 		<div class="flatbutton">
 			<a href="../activity.html"><i class="material-icons">arrow_back</i>Go back to activity page</a>
 		</div>
-		<div class="activity_flex">
-			<div class="activity_1-200">
-				<p>This program trains leaders for future agriculture, which include highly advanced greenhouse horticulture and artificial-light plant factory. Participants learn from diverse fields such as agricultural engineering, food marketing, crop cultivation, and the environmental control. Topics range from food production to distribution and sales businesses. Graduates will possess the skills to contribute to innovations in future agricultural techniques and participate in Russo-Japanese joint enterprises in the Russian Far East.</p>
-			</div>
-			<div class="activity_1-200">
-				<p>This program trains leaders for future agriculture, which include highly advanced greenhouse horticulture and artificial-light plant factory. </p>
-			</div>
-			<div class="activity">
-				<p>This program trains leaders for future agriculture, which include highly advanced greenhouse horticulture and artificial-light plant factory. Participants learn from diverse fields such as agricultural engineering, food marketing, crop cultivation, and the environmental control. Topics range from food production to distribution and sales businesses. Graduates will possess the skills to contribute to innovations in future agricultural techniques and participate in Russo-Japanese joint enterprises in the Russian Far East.</p>
-			</div>
-			<div class="activity_1-200">
-				<p>This program trains leaders for future agriculture, which include highly advanced greenhouse horticulture and artificial-light plant factory. Participants learn from diverse fields such as agricultural engineering, food marketing, crop cultivation, and the environmental control. Topics range from food production to distribution and sales businesses. Graduates will possess the skills to contribute to innovations in future agricultural techniques and participate in Russo-Japanese joint enterprises in the Russian Far East.</p>
-			</div>
-			<div class="activity_1-200">
-				<p>This program trains leaders for future agriculture, which include highly advanced greenhouse horticulture and artificial-light plant factory. Participants learn from diverse fields such as agricultural engineering, food marketing, crop cultivation, and the environmental control. Topics range from food production to distribution and sales businesses. Graduates will possess the skills to contribute to innovations in future agricultural techniques and participate in Russo-Japanese joint enterprises in the Russian Far East.</p>
-			</div>
+		<div class="m-p-g">
+			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+			<img src="../common/img/logo_uni/logo_uni_Prim.jpg" data-full="full-1.jpg" class="m-p-g__thumbs-img" />
+			<img src="../common/img/logo_uni/logo_uni_Prim.jpg" data-full="full-2.jpg" class="m-p-g__thumbs-img" />
+			<img src="../common/img/logo_uni/logo_uni_Prim.jpg" data-full="full-3.jpg" class="m-p-g__thumbs-img" />
+		</div>
+		<script>
+			var elem = document.querySelector('.m-p-g');
+			
+			document.addEventListener('DOMContentLoaded', function() {
+				var gallery = new MaterialPhotoGallery(elem);
+			});
+		</script>
+			<div class="m-p-g__fullscreen"></div>
+		</div>
+
 		</div>
 	</div>
 			<a id="pageTop" href="#header"><i class="material-icons">arrow_upward</i></a>

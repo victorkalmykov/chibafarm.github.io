@@ -29,7 +29,8 @@ nav {
 }
 	#minilogo	{display: inline;}
 	#logo {display: none;}
-	#logo2 {font-family:'Abril Fatface', cursive;'Russo One', sans-serif;
+	#logo2 {
+		font-family:'Abril Fatface', cursive;'Russo One', sans-serif;
 		padding-top: 10px;
 		color: #DCEDC8;
 		font-size:15px;
@@ -64,11 +65,21 @@ nav {
 .hidden-menu li {
 	color: #fff;
 	padding: 10px 0 10px 5px;
+	position: relative;
 }
 .hidden-menu li a {
 	color: #fff;
 	font-size: 18px;
 }
+
+	#menufooter	{
+		position: absolute;
+		bottom: 0;
+	}
+		#menufooter a	{
+		font-size: 14px;
+	}
+
 
 .hidden-menu-ticker {
   display: none;

@@ -5,24 +5,42 @@ a img {
 	vertical-align: middle;
 }
 
+/* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+
 .galery	{
-	max-width: 950px;
-	margin: 10px auto 0 auto;
-	padding: 10px;
 	display: flex;
-	flex-flow: row wrap;
-	align-content: flex-start;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
 .galaryelement	{
-	flex: 0 1 300px;
+	flex: 30%;
+	max-width: 280px;
+	border: 1px solid rgba(0,0,0,.14);
+	margin: 10px 4px;
 }
 
 .galaryelement img	{
-	max-width: 100%;
-	min-width: 300px;
-	height: auto;
+	vertical-align: middle;
+	box-shadow: none !important;
+}
+
+.galaryelement p	{
+	padding: 7px;
+}
+
+@media screen and (max-width: 800px){
+	.galaryelement	{
+		flex: 50%;
+		max-width: 48%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.galaryelement	{
+		flex: 100%;
+		max-width: 100%;
+	}
 }
 
 /*class для картинок с закруглением*/
@@ -36,7 +54,12 @@ img.pic {
 
 #logo_uni	{
 	max-width: 400px;
+	width: 100%;
+	margin: 5px 0 5px 0;
+	border: 1px solid rgba(0,0,0,.14);
 }
+
+
 
 #MainBild	{
 	max-width: 400px;

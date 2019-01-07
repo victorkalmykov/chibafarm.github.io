@@ -180,8 +180,10 @@ a#mail, #tel {
 .contents img {
 	max-width: 100%;
 	height: auto;
+	/*
 	box-sizing: border-box;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	*/
 }
 
 .contents p {
@@ -199,7 +201,7 @@ a#mail, #tel {
 
 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 900px) {
 .contents img {
 	max-width: 100%;
 	height: auto;
@@ -212,8 +214,8 @@ a#mail, #tel {
 .conTitle {
 	width: 100%;
 	font-size: 171.4%;
-	padding:20px 0 20px 0;
-	overflow:hidden;
+	padding: 20px 0 20px 0;
+	overflow: hidden;
 	font-family: 'Ubuntu','Roboto','Noto Sans Japanese', serif;
 	font-weight: bold;
 	float: left;
@@ -267,11 +269,12 @@ a#mail, #tel {
 	min-width:335px;
 	min-height:335px;
 	padding: 10px;
-	margin-top: 5px;
+	margin: 5px;
 	text-align: left;
+	border: 1px solid rgba(0,0,0,.14);
 	border-radius: 5px;
-	box-sizing: border-box;
-	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	/*box-sizing: border-box;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);*/
 }
  /* Id для верхних контейнеров с содержимым и расположением друг рядом с другом */
 	#topCont {
@@ -280,7 +283,7 @@ a#mail, #tel {
 
 	/* Для заполнения пустоты */
 .fill_empty {
-	min-height: 60vh;
+	min-height: 80vh;
 }
 	
 /* Настройка таблицы в контейнере2 */
