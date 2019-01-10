@@ -13,31 +13,33 @@ a img {
 	padding: 0 4px;
 }
 
-.galaryelement	{
+.galeryelement	{
 	flex: 30%;
 	max-width: 280px;
 	border: 1px solid rgba(0,0,0,.14);
+	border-radius: 5px;
 	margin: 10px 4px;
 }
 
-.galaryelement img	{
-	vertical-align: middle;
+.galeryelement img	{
+	vertical-align: top;
 	box-shadow: none !important;
+	border-radius: 5px 5px 0 0;
 }
 
-.galaryelement p	{
+.galeryelement p	{
 	padding: 7px;
 }
 
 @media screen and (max-width: 800px){
-	.galaryelement	{
+	.galeryelement	{
 		flex: 50%;
 		max-width: 48%;
 	}
 }
 
 @media screen and (max-width: 600px){
-	.galaryelement	{
+	.galeryelement	{
 		flex: 100%;
 		max-width: 100%;
 	}
