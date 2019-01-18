@@ -168,6 +168,19 @@ Responsive Stuff
   .timeline p {
     padding-top: 5px;
   }
+  .timeline1 .event::before {
+    left: 0.5px;
+    top: 0px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline1 h3 {
+    font-size: 16px;
+	padding-top: 25px;
+  }
+  .timeline1 p {
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 768px) {
