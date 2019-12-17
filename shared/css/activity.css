@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/*サイト設定-------------------------------------------------------------------------------------------------------------*/
+#contentsBox {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.timeLine {
+	padding: 0 6% 0;
+}
+.Odd {
+	background: #eee;
+}
+.Even {
+	background: #f8f8f8;
+}
+.line {
+	padding: 5% 0;
+	background:url(../../images/activity/line.png) repeat-y top left;
+	background-size: 3.7% auto;
+	background-position: 16.7% 0; 
+}
+#straight.line {
+	background:url(../../images/activity/line2.png) repeat-y top left;
+	background-size: 3.7% auto;
+	background-position: 16.7% 0;
+}
+#first {
+	padding-top: 5%;
+}
+#first .line {
+	padding-top: 0;
+}
+/* .timeLine .timeSet {
+	
+} */
+.timeLine .date {
+	float: left;
+	width: 15%;
+	text-align: right;
+	padding-right: 1%;
+}
+.timeLine .timeDetail {
+	float: right;
+	padding-left: 5%;
+	width: 79%;
+	background:url(../../images/activity/circle.png) no-repeat top left;
+	background-size: 4.5% auto;
+}
+.timeLine .timeDetail p {
+	line-height: 1.2;
+	font-size: 14px;
+}
+.timeLine h3 {
+	font-size: 17px;
+	letter-spacing: 0.05em;
+}
+.timeLine img {
+	margin: 2.5% 0;
+	width: 100%;
+}
+.timeLine .btn {
+	width: 50%;
+}
+
+@media screen and (max-width: 768px){
+	#contentsBox {
+		padding: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+	.line {
+		background:url(../../images/activity/line.png) repeat-y top left;
+		background-size: 4.5% auto;
+		background-position: 0 0;
+	}
+	#straight.line {
+		background:url(../../images/activity/line2.png) repeat-y top left;
+		background-size: 4.5% auto;
+		background-position: 0 0;
+	}
+	.timeLine .date {
+		float: none;
+		width: 94%;
+		padding-right:0;
+		padding-left: 6%;
+		text-align: left;
+		background:url(../../images/activity/circle.png) no-repeat top left;
+		background-size: 4.5% auto;
+	}
+	.timeLine .timeDetail {
+		float: none;
+		padding-left: 0;
+		padding-left: 6%;
+		width: 94%;
+		background: none;
+	}
+	.timeLine .btn {
+		width: auto;
+	}
+}
+
+.reB {
+	margin: 40px auto !important;
+	width: 300px;
+}
+.reB .btn { margin: 0 !important; }
+#More {
+	margin:0 auto;
+	padding: 5%;
+	width: 90%;
+	background: #fef7ea;
+}
+
+#More h3 {
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#More #MainImg {
+	margin: 30px 0;
+}
+#More #MainImg img { width: 80%; }
+#More .blockT {
+	margin-bottom: 50px;
+}
+#More .shadowBox {
+	background: #fff;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	border-top-right-radius: 8px;
+  	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+  	border-bottom-left-radius: 8px;
+}
+#More .first {
+	margin-bottom: 40px;
+}
+
+#More .shadowBox .title {
+	padding: 10px 0 ;
+	text-align: center;
+	background: #7aae30;
+	color: #fff;
+	border-top-right-radius: 8px;
+  	border-top-left-radius: 8px;
+}
+#More .shadowBox .txt {
+	padding: 2.5%;
+	font-size: 14px;
+}
+#More .googleMap {
+	height: 300px;
+}
+
+#More .MorePageB {
+	margin: 0 auto;
+	width: 70%;
+}
+#More #gallery img { width: 100%; }
+#More #gallery ul {
+	width: 100%;
+	display:table;
+	font-size:0;
+}
+#More #gallery li {
+	display: inline-block;
+    vertical-align: top;
+	margin: 0.25% 0.25% !important;
+	width: 32.5%;
+}
+
+@media screen and (max-width: 768px){
+	#More h3 {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	#More #MainImg img { width: 100%; }
+	.reB {
+		margin: 2.5% auto !important;
+		width: 50%;
+	}
+}
+
+/* QR and Print event */
+
+.qr_event {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	text-align: center;
+  }
+  
+  .qr_code {
+	max-width: 135px;
+	padding: 5px;
+	border: 2px solid #5b9707;
+	border-bottom: 40px solid #5b9707;
+	border-radius: 10px;
+  }
+  
+  .qr_link-text {
+	position: relative;
+	bottom: 30px;
+	color: #ffffff;
+  }
+  
+  .btn-print {
+	margin: 0 auto;
+  }
+
+  .only_print {
+	  display: none;
+  }
+  
+@media print {
+	body, #contents {
+	  margin: 0;
+	  padding-top: 0;
+	  color: #000;
+	  background-color: #fff;
+	}
+	header, footer, #langTab, #headerSet, #menu, nav, #contents_header, .routeMap, .pagetop, .no_print {
+	  display: none;
+	}
+	#More h3 {
+	  font-size: 25px;
+	  line-height: 1.2;
+	}
+	#More .titleLine {
+	  margin-bottom: 5px;
+	}
+	#More .googleMap {
+	  margin-bottom: 10px;
+	}
+	#More .blockT {
+	  clear: both;
+	  -webkit-column-break-inside: avoid;
+			  break-inside: avoid;
+	  margin-bottom: 0px;
+	}
+	#More .blockT:last-child {
+	  margin-bottom: 5px;
+	}
+	#More .MorePageB {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+		  -ms-flex-align: center;
+			  align-items: center;
+	  -webkit-box-pack: justify;
+		  -ms-flex-pack: justify;
+			  justify-content: space-between;
+	  width: 100%;
+	}
+	#More .MorePageB p {
+	  margin: 0 10px;
+	}
+	#More .MorePageB a {
+	  margin: 0 30px 0 10px;
+	}
+	#More .MorePageB a:after {
+	  content: ":  " attr(data-link) " ";
+	  white-space: pre;
+	  word-wrap: break-word;
+	}
+	.qr_code {
+		border-bottom: 2px solid #5b9707;
+	}
+	.qr_code img{
+		margin-left: auto;
+	}
+	.qr_link-text {
+		display: none;
+	}
+	.only_print {
+		display: block;
+	}
+  }
+
+/* End QR and Print event */
+
+/* ギャラリー Lighbox CSS */
+.lightbox {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: 30px;
+	box-sizing: border-box;
+  }
+  
+  .lightbox img {
+	display: block;
+	margin: auto;
+	border: 5px solid #ffffff;
+	border-radius: 3px;
+  }
+  
+  .lightbox .caption {
+	margin: 15px auto;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700;
+	color: #eee;
+  }
+  @media screen and (max-width: 768px){
+	.lightbox img {
+	  display: block;
+	  max-width: 95%;
+	  margin: 20% auto;
+	  border: 5px solid #ffffff;
+	  border-radius: 3px;
+	}  
+  }

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*サイト設定-------------------------------------------------------------------------------------------------------------*/
+#un {
+	padding: 2.5%;
+	max-width: 950px;
+	width: 95%;
+	height: 338px;
+	background:#fff url(../../images/top/chiba_uni_img.jpg) no-repeat top right;
+	background-size: 100% auto;
+}
+#un p {
+	padding: 3px 10px;
+	background: #af790e;
+	display: inline-block;
+	font-size: 30px;
+	color: #fff;
+}
+#un p.sub {
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+.leadT {
+	margin-bottom: 10px;
+}
+
+#Event {
+	margin: 30px auto 0;
+	width: 95%;
+	display: flex; 
+}
+.events {
+	width: 49%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	background: #fff;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	border-top-right-radius: 8px;
+  	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+  	border-bottom-left-radius: 8px;
+}
+#e2.events {
+	margin-right: 0;
+	margin-left: 1%;
+}
+.events p.date {
+	padding: 10px 5px;
+	background: #7aae30;
+	color: #fff;
+	text-align: center;
+	border-top-right-radius: 8px;
+  	border-top-left-radius: 8px;
+}
+.events .eventsBody {
+	padding: 5%;
+	font-size: 14px;
+	line-height: 1.8;
+}
+.events .eventsBody p.title {
+	font-size: 20px;
+	line-height: 1.2;
+}
+.events img {
+	margin: 10px 0;
+	width: 100%;
+}
+
+#Partner {
+	margin: 0 auto;
+	width: 95%;
+}
+#p2.events {
+	margin-right: 0;
+	margin-left: 1%;
+}
+#Partner a:link {
+	opacity: 1;
+}
+#Partner a:hover {
+	opacity: 0.6;
+}
+#Partner a img {
+	padding: 0 5%;
+	width: 90%;
+}
+
+@media screen and (max-width: 768px){
+	#un {
+		padding: 0;
+		width: 100%;
+		height: auto;
+	}
+	#un p {
+		padding: 5% 2.5% 0;
+		display: block;
+		font-size: 4.5vw;
+		text-align: center;
+		line-height: 1.0;
+	}
+	#un p.sub {
+		margin-top: 0;
+		padding-top: 2%;
+		padding-bottom: 5%;
+		font-size: 3.5vw;
+	}
+	#un img { width: 100%; }
+	#Event {
+		margin: 30px auto 0;
+		width: 95%;
+		display: block; 
+	}
+	.events {
+		width: 100%;
+		margin-right: 0;
+	}
+	.events img {
+		margin: 2.5% 0;
+	}
+	#e2.events {
+		margin-top: 5%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#p2.events {
+		margin-top: 5%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#p3.events {
+		margin-top: 5%;
+		margin-right: 0;
+		margin-left: 0;
+	}	
+}

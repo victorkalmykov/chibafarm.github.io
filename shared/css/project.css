@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*サイト設定-------------------------------------------------------------------------------------------------------------*/
+#Main p {
+	width: 49.5%;
+}
+#Main p img {
+	width: 100%;
+	height: auto;
+}
+
+table {
+	margin-top: 40px;
+	font-size: 14px;
+	line-height: 1.5;
+	border: #c7993f 1px solid;
+	color: #333333 !important;
+}
+table th {
+	padding: 1% 2%;
+	background: #e1c999;
+	border: #c7993f 1px solid;
+}
+table td {
+	padding: 2%;
+	border: #c7993f 1px solid;
+}
+table td.bgChange {
+	background: #f9f5ee;
+}
+
+
+@media screen and (max-width: 768px){
+	.fL { float:left; }
+	.fR { float:right; }
+	
+	table {
+		margin-top: 5%;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+}
